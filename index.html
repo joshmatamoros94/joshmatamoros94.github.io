@@ -1,7 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Blog</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { max-width: 800px; margin: auto; padding: 20px; }
+    h1 { text-align: center; }
+    .news-section { margin-bottom: 30px; }
+    .news-section h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+    .article { margin-bottom: 15px; }
+    .article a { text-decoration: none; color: #0066cc; }
+    .article a:hover { text-decoration: underline; }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <h1>Latest News</h1>
+    <div id="bbc-news" class="news-section">
+      <h2>BBC News</h2>
+      <div id="bbc-articles"></div>
+    </div>
+    <div id="reuters-news" class="news-section">
+      <h2>Reuters News</h2>
+      <div id="reuters-articles"></div>
+    </div>
+    <div id="nyt-news" class="news-section">
+      <h2>New York Times</h2>
+      <div id="nyt-articles"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
